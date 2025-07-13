@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-8 relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-2 h-2 bg-eco-green rounded-full animate-pulse-slow"></div>
@@ -31,32 +31,32 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto text-center relative z-10">
+      <div className="max-w-4xl text-center relative z-10">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6">
+          <h1 className="text-6xl md:text-8xl font-heading font-bold mb-6">
             <span className="block text-foreground">Sanjay</span>
             <span className="block gradient-text">S</span>
           </h1>
           
           <div className="max-w-3xl mx-auto mb-8">
-            <h2 className="text-xl md:text-2xl text-primary font-medium mb-4">
+            <h2 className="text-2xl md:text-3xl text-primary font-medium mb-6">
               Transforming Waste into Clean Energy & Sustainable Solutions
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               I am a Biotechnology postgraduate focused on bioenergy, environmental sustainability, 
               and waste valorization. Passionate about using science to engineer greener solutions for tomorrow.
             </p>
-            <div className="mt-4 text-sm text-muted-foreground">
-              <span className="font-medium">Biotech Student</span> • 
-              <span className="font-medium"> Certifications in Bioenergy & Environmental Technology</span>
+            <div className="text-sm text-muted-foreground">
+              <span className="font-medium">M.Tech Biotechnology Student</span> • 
+              <span className="font-medium"> Specialist in Renewable Energy & Environmental Technology</span>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button
               onClick={() => scrollToSection('about')}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3 rounded-full"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-4 rounded-full text-lg"
             >
               Discover My Story
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -66,17 +66,10 @@ const Hero = () => {
               onClick={() => scrollToSection('contact')}
               variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium px-8 py-3 rounded-full"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium px-8 py-4 rounded-full text-lg"
             >
               Work With Me
             </Button>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
           </div>
         </div>
       </div>

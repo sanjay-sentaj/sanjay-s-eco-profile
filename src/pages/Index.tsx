@@ -1,28 +1,15 @@
 
-import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Education from '@/components/Education';
-import Skills from '@/components/Skills';
-import Projects from '@/components/Projects';
-import Publications from '@/components/Publications';
-import Certifications from '@/components/Certifications';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import { useState } from 'react';
+import Sidebar from '@/components/Sidebar';
+import MainContent from '@/components/MainContent';
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState('home');
+
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-      <Hero />
-      <About />
-      <Education />
-      <Skills />
-      <Certifications />
-      <Projects />
-      <Publications />
-      <Contact />
-      <Footer />
+      <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
+      <MainContent activeSection={activeSection} onSectionChange={setActiveSection} />
     </div>
   );
 };
