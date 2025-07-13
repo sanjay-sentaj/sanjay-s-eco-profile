@@ -8,9 +8,11 @@ const Publications = () => {
       title: "Studies on Enhancing Granule Formation in Aerobic Granular Sludge Treatment Method",
       authors: ["Abirami, B.", "Kevin, V.", "Padmaja, A.", "Sanjay, S.", "Devik, D.", "Balakrishnan, P."],
       conference: "International Conference on Water Resources, Ocean and Environmental Engineering",
-      publisher: "Springer Nature",
+      publisher: "Springer Nature Singapore",
       location: "Singapore",
       year: "2024",
+      month: "February",
+      pages: "pp. 85–95",
       type: "Conference Paper",
       status: "Published"
     }
@@ -18,24 +20,31 @@ const Publications = () => {
 
   const conferences = [
     {
-      title: "International Conference on Water, Energy & Environmental Engineering",
+      title: "International Conference Paper Presentation",
       institution: "Sathyabama University",
       year: "2023",
-      type: "ICWEE",
+      type: "ICWEE (International Conference on Water, Energy & Environmental Engineering)",
       role: "Presenter"
     },
     {
-      title: "E-Yuva Presentation",
+      title: "Sustainable Dress from Waste Material",
+      institution: "VIT (Vellore Institute of Technology)",
+      year: "2023",
+      type: "Innovation Project Presentation",
+      role: "Presenter"
+    },
+    {
+      title: "Technical Presentation on E-Yuva (BIRAC)",
       institution: "Anna University",
       year: "2024",
-      type: "Technical Presentation",
+      type: "E-Yuva Technical Presentation",
       role: "Presenter"
     },
     {
-      title: "ICITS – SDG-focused Conference",
-      institution: "Various",
+      title: "International Conference on SDG Integration & Transformation",
+      institution: "Various International Institutions",
       year: "2024",
-      type: "International Conference",
+      type: "ICITS - SDG-focused Conference",
       role: "Participant"
     }
   ];
@@ -69,7 +78,7 @@ const Publications = () => {
                     </span>
                     <div className="flex items-center text-muted-foreground text-sm">
                       <Calendar className="w-4 h-4 mr-1" />
-                      {pub.year}
+                      {pub.month} {pub.year}
                     </div>
                   </div>
 
@@ -91,7 +100,7 @@ const Publications = () => {
                     </div>
                     <div className="text-sm text-muted-foreground">
                       <span className="font-medium">Publisher: </span>
-                      {pub.publisher}, {pub.location}
+                      {pub.publisher}, {pub.location} ({pub.year}), {pub.pages}
                     </div>
                   </div>
 
@@ -113,7 +122,7 @@ const Publications = () => {
           <div>
             <h3 className="text-2xl font-heading font-semibold mb-8 flex items-center">
               <Users className="w-6 h-6 text-primary mr-3" />
-              Conferences
+              Conferences & Presentations
             </h3>
 
             <div className="space-y-6">
@@ -139,7 +148,7 @@ const Publications = () => {
                       {conf.institution}
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      <span className="font-medium">Type: </span>
+                      <span className="font-medium">Event: </span>
                       {conf.type}
                     </div>
                   </div>

@@ -7,17 +7,17 @@ const Education = () => {
       degree: "M.Tech in Biotechnology",
       institution: "Hindustan Institute of Technology and Science",
       period: "2024 – Present",
-      focus: "Renewable Energy & Wastewater Treatment",
+      focus: "Renewable Energy Applications & Advanced Wastewater Treatment",
       status: "Current",
-      description: "Advanced research in renewable energy applications, waste-to-energy systems, and environmental biotechnology."
+      description: "Advanced research in renewable energy applications, waste-to-energy systems, and environmental biotechnology with focus on sustainable solutions."
     },
     {
       degree: "B.Tech in Biotechnology",
       institution: "Hindustan Institute of Technology and Science",
       period: "2020 – 2024",
-      focus: "Zeolite-Assisted AGS Reactor for Sewage Treatment",
+      focus: "Zeolite-Assisted Aerobic Granular Sludge Reactor for Sewage Treatment",
       status: "Completed",
-      description: "Comprehensive study of biotechnology principles with specialization in environmental applications and thesis on aerobic granular sludge reactors."
+      description: "Comprehensive study of biotechnology principles with specialization in environmental applications. Relevant coursework included Environmental Biotechnology and Microbial Wastewater Systems."
     }
   ];
 
@@ -82,10 +82,12 @@ const Education = () => {
                     </div>
 
                     <div className="space-y-3">
-                      <div className="flex items-center space-x-2">
-                        <BookOpen className="w-4 h-4 text-primary" />
-                        <span className="font-medium text-primary">Research Focus:</span>
-                        <span className="text-muted-foreground">{edu.focus}</span>
+                      <div className="flex items-start space-x-2">
+                        <BookOpen className="w-4 h-4 text-primary mt-1" />
+                        <div>
+                          <span className="font-medium text-primary">Research Focus: </span>
+                          <span className="text-muted-foreground">{edu.focus}</span>
+                        </div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
                         {edu.description}

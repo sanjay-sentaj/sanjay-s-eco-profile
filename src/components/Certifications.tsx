@@ -5,61 +5,94 @@ import { Button } from '@/components/ui/button';
 const Certifications = () => {
   const certifications = [
     {
-      title: "Renewable Energy & Green Building",
+      title: "Renewable Energy & Green Building Entrepreneurship",
       provider: "Duke University",
       category: "Renewable Energy",
-      year: "2024",
+      year: "2025",
+      score: "96%",
+      month: "April",
       verified: true
     },
     {
       title: "Renewable Energy Tech Fundamentals",
       provider: "University of Colorado",
-      category: "Technology",
-      year: "2024",
+      category: "Renewable Energy",
+      year: "2025",
+      score: "91%",
+      month: "May",
+      verified: true
+    },
+    {
+      title: "Renewable Energy Projects",
+      provider: "University of Colorado",
+      category: "Renewable Energy",
+      year: "2025",
+      score: "91%",
+      month: "May",
       verified: true
     },
     {
       title: "Electric Power Systems",
       provider: "University at Buffalo",
       category: "Power Systems",
-      year: "2024",
+      year: "2025",
+      score: "85%",
+      month: "May",
       verified: true
     },
     {
       title: "Global Environmental Management",
       provider: "DTU (Technical University of Denmark)",
       category: "Environmental",
-      year: "2024",
+      year: "2025",
+      score: "91%",
+      month: "May",
       verified: true
     },
     {
       title: "Hazardous Waste Management",
       provider: "L&T EduTech",
       category: "Waste Management",
-      year: "2024",
+      year: "2025",
+      score: "90%",
+      month: "May",
       verified: true
     },
     {
       title: "Industrial Biotechnology",
       provider: "University of Manchester",
       category: "Biotechnology",
-      year: "2024",
+      year: "2025",
+      score: "91%",
+      month: "May",
       verified: true
     },
     {
       title: "Household Water Treatment",
       provider: "EPFL",
       category: "Water Treatment",
-      year: "2024",
+      year: "2025",
+      score: "95%",
+      month: "April",
       verified: true
     },
     {
       title: "Python Programming",
       provider: "Arizona State University",
       category: "Programming",
-      year: "2024",
-      verified: true,
-      score: "100%"
+      year: "2025",
+      score: "100%",
+      month: "May",
+      verified: true
+    },
+    {
+      title: "Comfort in Buildings",
+      provider: "L&T EduTech",
+      category: "Building Systems",
+      year: "2025",
+      score: "85%",
+      month: "May",
+      verified: true
     }
   ];
 
@@ -73,7 +106,7 @@ const Certifications = () => {
             <span className="gradient-text">Certifications</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Professional certifications and continuous learning achievements
+            Professional certifications with high achievement scores
           </p>
         </div>
 
@@ -102,7 +135,7 @@ const Certifications = () => {
                   )}
                   <div className="flex items-center text-muted-foreground text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
-                    {cert.year}
+                    {cert.month} {cert.year}
                   </div>
                 </div>
               </div>
@@ -115,18 +148,18 @@ const Certifications = () => {
                 {cert.provider}
               </p>
 
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between mb-4">
                 <span className="text-xs bg-secondary px-2 py-1 rounded">
                   {cert.category}
                 </span>
                 {cert.score && (
-                  <span className="text-xs font-medium text-primary">
+                  <span className="text-sm font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                     {cert.score}
                   </span>
                 )}
               </div>
 
-              <Button variant="outline" size="sm" className="w-full mt-4">
+              <Button variant="outline" size="sm" className="w-full">
                 <ExternalLink className="w-4 h-4 mr-2" />
                 View Certificate
               </Button>
@@ -137,13 +170,13 @@ const Certifications = () => {
         <div className="text-center mt-12">
           <div className="glass-card p-8 max-w-2xl mx-auto">
             <h3 className="text-xl font-heading font-semibold mb-4 text-primary">
-              Continuous Learning
+              Excellence in Learning
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              These certifications represent my commitment to staying current with the latest 
-              developments in biotechnology, renewable energy, and environmental sustainability. 
-              Each certification has equipped me with practical knowledge that directly contributes 
-              to my research and professional development.
+              These certifications represent my commitment to excellence in biotechnology, renewable energy, 
+              and environmental sustainability. With consistently high scores (85-100%), each certification 
+              has equipped me with cutting-edge knowledge that directly contributes to my research and 
+              professional development in sustainable technology solutions.
             </p>
           </div>
         </div>

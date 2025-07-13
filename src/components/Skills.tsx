@@ -4,47 +4,47 @@ import { FlaskConical, Code, Zap, Leaf, Droplets, Recycle, BarChart3, Database }
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Lab Techniques",
+      title: "Laboratory Techniques",
       icon: FlaskConical,
       skills: [
-        { name: "COD Analysis", level: 90 },
-        { name: "BOD Testing", level: 85 },
-        { name: "Sulphate & Chloride Analysis", level: 88 },
-        { name: "TS, VS, MLSS", level: 92 },
+        { name: "Chemical Oxygen Demand (COD) Analysis", level: 92 },
+        { name: "Biological Oxygen Demand (BOD) Analysis", level: 90 },
+        { name: "Sulphate & Chloride Testing", level: 88 },
+        { name: "Solids Content Analysis (TS, VS, MLSS)", level: 94 },
         { name: "Microbial Analysis", level: 87 }
       ]
     },
     {
-      title: "Software & Tools",
+      title: "Technical & Programming",
       icon: Code,
       skills: [
         { name: "Python Programming", level: 100 },
         { name: "Data Analysis", level: 85 },
         { name: "Statistical Software", level: 80 },
-        { name: "Lab Equipment", level: 90 },
-        { name: "Research Tools", level: 88 }
+        { name: "Lab Equipment Operation", level: 90 },
+        { name: "Research Methodologies", level: 88 }
       ]
     },
     {
-      title: "Domain Expertise",
+      title: "Renewable Energy Systems",
       icon: Zap,
       skills: [
-        { name: "Waste-to-Energy", level: 95 },
-        { name: "Biogas Systems", level: 90 },
-        { name: "Biofuel Process Optimization", level: 88 },
-        { name: "Bioenergy Grid Integration", level: 85 },
-        { name: "Renewable Tech Fundamentals", level: 92 }
+        { name: "Renewable Energy Technologies", level: 96 },
+        { name: "Green Building Systems", level: 91 },
+        { name: "Electric Power Systems", level: 85 },
+        { name: "Energy Project Development", level: 91 },
+        { name: "Bioenergy Applications", level: 92 }
       ]
     },
     {
-      title: "Environmental Tech",
+      title: "Environmental Technology",
       icon: Leaf,
       skills: [
-        { name: "Organic Waste Management", level: 93 },
-        { name: "Wastewater Treatment", level: 95 },
-        { name: "Environmental Monitoring", level: 87 },
-        { name: "Sustainability Assessment", level: 90 },
-        { name: "Green Technology", level: 89 }
+        { name: "Global Environmental Management", level: 91 },
+        { name: "Hazardous Waste Management", level: 90 },
+        { name: "Industrial Biotechnology", level: 91 },
+        { name: "Household Water Treatment", level: 95 },
+        { name: "Environmental Monitoring", level: 87 }
       ]
     }
   ];
@@ -57,7 +57,7 @@ const Skills = () => {
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Expertise across laboratory techniques, software tools, and environmental technologies
+            Expertise across laboratory techniques, renewable energy, and environmental technologies
           </p>
         </div>
 

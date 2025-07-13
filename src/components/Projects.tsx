@@ -1,15 +1,15 @@
 
-import { ExternalLink, Github, Beaker, Dna, Recycle } from 'lucide-react';
+import { ExternalLink, Github, Beaker, Dna, Recycle, Microscope } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
     {
-      title: "AGS Bioreactor Fabrication",
-      description: "Design and fabrication of Aerobic Granular Sludge bioreactor for enhanced wastewater treatment efficiency using zeolite-assisted processes.",
+      title: "Zeolite-Assisted AGS Bioreactor",
+      description: "Design and fabrication of Zeolite-based Aerobic Granular Sludge bioreactor for enhanced wastewater treatment efficiency and sewage processing.",
       category: "Biotechnology",
       icon: Beaker,
-      tech: ["Bioreactor Design", "Zeolite Technology", "Wastewater Treatment"],
+      tech: ["Bioreactor Design", "Zeolite Technology", "Wastewater Treatment", "AGS Systems"],
       status: "Completed",
       image: "/api/placeholder/400/250"
     },
@@ -18,12 +18,21 @@ const Projects = () => {
       description: "Comprehensive phylogenetic study of ACE-2 receptor variations and their implications in COVID-19 susceptibility and treatment strategies.",
       category: "Bioinformatics",
       icon: Dna,
-      tech: ["Phylogenetic Analysis", "Protein Modeling", "Data Analysis"],
+      tech: ["Phylogenetic Analysis", "Protein Modeling", "Data Analysis", "COVID Research"],
       status: "Published",
       image: "/api/placeholder/400/250"
     },
     {
-      title: "Waste-Based Sustainable Dress",
+      title: "Aerobic Granular Sludge Treatment",
+      description: "Advanced research on aerobic granular sludge treatment methods for improved wastewater processing and environmental sustainability.",
+      category: "Environmental",
+      icon: Microscope,
+      tech: ["AGS Technology", "Environmental Engineering", "Waste Treatment"],
+      status: "Research",
+      image: "/api/placeholder/400/250"
+    },
+    {
+      title: "Sustainable Dress from Waste Material",
       description: "Innovative project creating sustainable fashion materials from organic waste, presented at VIT conference in 2023.",
       category: "Sustainability",
       icon: Recycle,
@@ -45,7 +54,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="glass-card overflow-hidden hover-lift group">
               {/* Project Image Placeholder */}
@@ -55,6 +64,7 @@ const Projects = () => {
                   <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                     project.status === 'Completed' ? 'bg-green-500/20 text-green-400' :
                     project.status === 'Published' ? 'bg-blue-500/20 text-blue-400' :
+                    project.status === 'Research' ? 'bg-purple-500/20 text-purple-400' :
                     'bg-yellow-500/20 text-yellow-400'
                   }`}>
                     {project.status}

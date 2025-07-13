@@ -28,6 +28,7 @@ const About = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Sanjay earned his B.Tech in Biotechnology (2020–2024) from the same institution, where he 
                 completed a thesis on Zeolite-Assisted Aerobic Granular Sludge Reactors for sewage treatment.
+                His coursework includes Environmental Biotechnology and Microbial Wastewater Systems.
               </p>
             </div>
 
@@ -54,23 +55,23 @@ const About = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Biofuel Infrastructure Development</span>
+                  <span className="text-muted-foreground">Renewable Energy Applications</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Microbial Bioenergy Systems</span>
+                  <span className="text-muted-foreground">Advanced Wastewater Treatment</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Environmental Technology Innovation</span>
+                  <span className="text-muted-foreground">Waste-to-Energy Systems</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Waste Valorization Processes</span>
+                  <span className="text-muted-foreground">Environmental Biotechnology</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Sustainable Wastewater Treatment</span>
+                  <span className="text-muted-foreground">Microbial Wastewater Systems</span>
                 </div>
               </div>
             </div>

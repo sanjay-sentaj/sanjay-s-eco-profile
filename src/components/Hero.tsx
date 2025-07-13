@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6">
             <span className="block text-foreground">Sanjay</span>
-            <span className="block gradient-text">Mendoza</span>
+            <span className="block gradient-text">S</span>
           </h1>
           
           <div className="max-w-3xl mx-auto mb-8">
@@ -46,6 +46,10 @@ const Hero = () => {
               I am a Biotechnology postgraduate focused on bioenergy, environmental sustainability, 
               and waste valorization. Passionate about using science to engineer greener solutions for tomorrow.
             </p>
+            <div className="mt-4 text-sm text-muted-foreground">
+              <span className="font-medium">Biotech Student</span> • 
+              <span className="font-medium"> Certifications in Bioenergy & Environmental Technology</span>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
