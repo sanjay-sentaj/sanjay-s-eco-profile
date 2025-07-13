@@ -5,43 +5,43 @@
 
 @layer base {
   :root {
-    --background: 218 27% 12%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 98%;
+    --foreground: 222 84% 5%;
 
-    --card: 220 27% 15%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
 
-    --popover: 220 27% 15%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
 
     --primary: 159 94% 42%;
-    --primary-foreground: 220 27% 12%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 27% 18%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 84% 5%;
 
-    --muted: 220 27% 18%;
-    --muted-foreground: 215 16% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
     --accent: 159 94% 42%;
-    --accent-foreground: 220 27% 12%;
+    --accent-foreground: 222 84% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 27% 20%;
-    --input: 220 27% 20%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
     --ring: 159 94% 42%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 27% 12%;
-    --sidebar-foreground: 0 0% 95%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 84% 5%;
     --sidebar-primary: 159 94% 42%;
-    --sidebar-primary-foreground: 220 27% 12%;
-    --sidebar-accent: 220 27% 18%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 220 27% 20%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 84% 5%;
+    --sidebar-border: 214 32% 91%;
     --sidebar-ring: 159 94% 42%;
   }
 }
@@ -60,30 +60,30 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-eco-green to-eco-lightgreen bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-eco-lightgreen bg-clip-text text-transparent;
   }
 
   .glass-card {
-    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-xl;
+    @apply backdrop-blur-md bg-white/70 border border-white/20 rounded-xl shadow-lg;
   }
 
   .hover-lift {
-    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl;
+    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl;
   }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background));
+  background: hsl(var(--muted));
 }
 
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--primary));
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

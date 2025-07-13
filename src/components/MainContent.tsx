@@ -39,7 +39,7 @@ const MainContent = ({ activeSection, onSectionChange }: {
   }, [activeSection, onSectionChange]);
 
   return (
-    <div className="ml-80 min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-16">
       <div id="home">
         <Hero />
       </div>
