@@ -14,7 +14,8 @@ const Publications = () => {
       month: "February",
       pages: "pp. 85–95",
       type: "Conference Paper",
-      status: "Published"
+      status: "Published",
+      link: "https://link.springer.com/chapter/10.1007/978-981-97-7502-6_8"
     }
   ];
 
@@ -108,9 +109,11 @@ const Publications = () => {
                     <span className="text-xs bg-secondary px-2 py-1 rounded">
                       {pub.type}
                     </span>
-                    <Button variant="ghost" size="sm">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Paper
+                    <Button variant="ghost" size="sm" asChild>
+                      <a href={pub.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Paper
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -153,10 +156,6 @@ const Publications = () => {
                     </div>
                   </div>
 
-                  <Button variant="outline" size="sm" className="w-full">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Details
-                  </Button>
                 </div>
               ))}
             </div>

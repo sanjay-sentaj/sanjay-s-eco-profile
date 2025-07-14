@@ -19,7 +19,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/ab3a1350-63af-4f2d-8e0b-b7cd52b4d50f.png"
                 alt="Sanjay S - Biotechnology Professional"
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg hover-lift"
+                className="w-48 h-48 mx-auto rounded-lg shadow-lg hover-lift object-cover"
               />
             </div>
 
@@ -125,13 +125,10 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Chemical Oxygen Demand (COD) & Biological Oxygen Demand (BOD) Analysis",
-              "Sulphate, Chloride, Solids (TS, VS, MLSS) Content Analysis",
               "Biofuel Mass-Energy Balance",
               "Process Flow Diagram Creation (Draw.io)",
               "Excel-based ROI & Costing Model",
-              "Python for process optimization",
-              "AutoCAD/SketchUp basics (learning)",
-              "Canva, Google Sites, Notion for reports and portfolios"
+              "Python for process optimization"
             ].map((skill, index) => (
               <div key={index} className="bg-card p-4 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-3">
