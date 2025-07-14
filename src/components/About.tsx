@@ -1,5 +1,6 @@
 
 import { MapPin, Mail, Phone, Calendar, GraduationCap, Building, Globe } from 'lucide-react';
+import passportPhoto from '@/assets/passport-photo.jpg';
 
 const About = () => {
   return (
@@ -17,23 +18,10 @@ const About = () => {
           <div className="space-y-6">
             <div className="relative">
               <img 
-                src="/lovable-uploads/36de925f-1c96-458e-b051-2e59a77e6ce9.png"
+                src={passportPhoto}
                 alt="Sanjay S - Biotechnology Professional"
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  target.nextElementSibling?.classList.remove('hidden');
-                }}
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg hover-lift"
               />
-              <div className="hidden w-full max-w-md mx-auto bg-muted rounded-lg shadow-lg p-12 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-primary">S</span>
-                  </div>
-                  <p className="text-muted-foreground">Professional Photo</p>
-                </div>
-              </div>
             </div>
 
             <div className="bg-card p-6 rounded-lg shadow-sm border">

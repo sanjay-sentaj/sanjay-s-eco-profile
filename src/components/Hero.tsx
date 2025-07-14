@@ -1,6 +1,7 @@
 
 import { ArrowRight, MapPin, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import heroImage from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -11,22 +12,17 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background to-muted/10">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <div className="w-full h-full relative">
           <img 
-            src="/lovable-uploads/36de925f-1c96-458e-b051-2e59a77e6ce9.png"
+            src={heroImage}
             alt="Sanjay S - Biotechnology Professional"
-            className="w-full h-full object-cover object-center"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              target.parentElement!.classList.add('bg-gradient-to-br', 'from-muted/20', 'to-muted/5');
-            }}
+            className="w-full h-full object-cover object-center animate-fade-in"
           />
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
       </div>
 
@@ -34,13 +30,13 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl w-full px-8">
         <div className="max-w-2xl">
           {/* Main Content */}
-          <div className="space-y-6 text-white">
+          <div className="space-y-6 text-white animate-fade-in">
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-8xl font-heading font-bold leading-tight">
+              <h1 className="text-6xl md:text-8xl font-heading font-bold leading-tight animate-slide-in-right">
                 Sanjay S
               </h1>
               <div className="space-y-2">
-                <p className="text-xl md:text-2xl font-medium border-b-2 border-primary inline-block pb-1">
+                <p className="text-xl md:text-2xl font-medium border-b-2 border-primary inline-block pb-1 animate-fade-in">
                   I'm Biotechnology Student
                 </p>
               </div>
