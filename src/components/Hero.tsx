@@ -19,7 +19,7 @@ const Hero = () => {
     }
   };
 
-  // Calculate color intensity based on scroll (0 = dark, 1 = full color)
+  // Calculate darkness intensity based on scroll (0 = light, 1 = dark)
   const colorIntensity = Math.min(scrollY / 300, 1);
 
   return (
@@ -30,15 +30,16 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/fe7e051c-5bec-4146-bfe7-b6dce024232c.png"
             alt="Sanjay S - Biotechnology Professional"
-            className="w-full h-full object-cover object-center animate-fade-in transition-all duration-1000"
+            className="w-full h-full object-cover animate-fade-in transition-all duration-1000"
             style={{
-              filter: `grayscale(${1 - colorIntensity}) brightness(${0.3 + colorIntensity * 0.7}) saturate(${0.5 + colorIntensity * 0.5})`,
+              objectPosition: '60% center',
+              filter: `grayscale(${colorIntensity}) brightness(${1 - colorIntensity * 0.4}) saturate(${1 - colorIntensity * 0.6})`,
             }}
           />
-          {/* Dynamic Overlay that fades based on scroll */}
+          {/* Dynamic Overlay that increases darkness on scroll */}
           <div 
             className="absolute inset-0 bg-black transition-opacity duration-1000"
-            style={{ opacity: 0.6 - (colorIntensity * 0.3) }}
+            style={{ opacity: 0.2 + (colorIntensity * 0.5) }}
           ></div>
         </div>
       </div>

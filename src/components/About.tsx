@@ -1,6 +1,5 @@
 
 import { MapPin, Mail, Phone, Calendar, GraduationCap, Building, Globe } from 'lucide-react';
-import passportPhoto from '@/assets/passport-photo.jpg';
 
 const About = () => {
   return (
@@ -18,7 +17,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="relative">
               <img 
-                src={passportPhoto}
+                src="/lovable-uploads/ab3a1350-63af-4f2d-8e0b-b7cd52b4d50f.png"
                 alt="Sanjay S - Biotechnology Professional"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg hover-lift"
               />
@@ -72,7 +71,7 @@ const About = () => {
                     <span className="text-muted-foreground ml-2">Clean Energy</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 col-span-full">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                   <div>
                     <span className="font-medium text-foreground">Email:</span>
